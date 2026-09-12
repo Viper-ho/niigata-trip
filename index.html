@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新潟四天三夜旅遊行程 | Niigata Trip</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --accent-color: #00a896;
+            --bg-light: #f8f9fa;
+        }
+        body {
+            background-color: var(--bg-light);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+            padding-bottom: 30px;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2.5rem 1rem;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .day-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 12px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 12px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        .time-badge {
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        .category-badge {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+        .cat-flight { background-color: #cfe2ff; color: #084298; }
+        .cat-transport { background-color: #e2e3e5; color: #41464b; }
+        .cat-hotel { background-color: #fff3cd; color: #664d03; }
+        .cat-food { background-color: #f8d7da; color: #842029; }
+        .cat-spot { background-color: #d1e7dd; color: #0f5132; }
+        .cat-experience { background-color: #e0cffc; color: #3d0a91; }
+        .cat-shopping { background-color: #ffe69c; color: #664d03; }
+        
+        .map-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .map-link:hover {
+            text-decoration: underline;
+        }
+        .cost-info {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--primary-color);
+        }
+        .nav-pills .nav-link {
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            margin: 0 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頁頭資訊 -->
+    <header class="header-bg text-center">
+        <div class="container">
+            <h1 class="fw-bold"><i class="fa-solid fa-plane-departure me-2"></i>新潟四天三夜獨旅</h1>
+            <p class="lead mb-1">2026/06/19 (五) － 06/22 (一)</p>
+            <span class="badge bg-light text-dark"><i class="fa-solid fa-hotel me-1"></i>全程入住：Hotel Global View Niigata</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 天數切換快速選單 (手機便利導航) -->
+        <ul class="nav nav-pills justify-content-center mb-4 sticky-top bg-light py-2" id="dayTabs" style="z-index: 1000;">
+            <li class="nav-item"><a class="nav-link active" href="#day1">6/19 (五)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#day2">6/20 (六)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#day3">6/21 (日)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#day4">6/22 (一)</a></li>
+        </ul>
+
+        <!-- Day 1 -->
+        <div id="day1">
+            <div class="day-header">
+                <h4 class="m-0"><i class="fa-regular fa-calendar-days me-2"></i>Day 1：6/19 (五) 啟程與初抵新潟</h4>
+                <span class="badge bg-light text-dark">桃園 → 新潟</span>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">13:45</span>
+                        <span class="category-badge cat-flight">航班</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=桃園國際機場第一航廈" target="_blank" class="map-link">桃園國際機場 (TPE) 出發 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">IT228 虎航・第一航廈</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">18:00</span>
+                        <span class="category-badge cat-flight">抵達</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=新潟機場" target="_blank" class="map-link">新潟機場 (KIJ) 抵達 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">辦理入境手續</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">18:40</span>
+                        <span class="category-badge cat-transport">交通</span>
+                    </div>
+                    <span class="cost-info"><i class="fa-solid fa-yen-sign"></i> 450</span>
+                </div>
+                <h5 class="mb-1">機場 → JR 新潟站</h5>
+                <p class="text-muted mb-0">搭乘機場連接巴士 (車程約 25 分鐘) | E22空港・松濱線 (18:20 & 19:05)</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">19:30</span>
+                        <span class="category-badge cat-hotel">住宿</span>
+                    </div>
+                    <span class="cost-info"><i class="fa-solid fa-yen-sign"></i> 26,490 (3晚)</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Global+View+Niigata" target="_blank" class="map-link">Hotel Global View Niigata <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">辦理入住、放置行李 (全程 3 晚不換飯店)</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">20:30</span>
+                        <span class="category-badge cat-food">美食</span>
+                    </div>
+                    <span class="cost-info">視餐點</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=富壽し+新潟駅前店" target="_blank" class="map-link">富壽し 新潟駅前店 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">晚餐：老字號壽司名店，品嚐本地當季漁獲</p>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div id="day2">
+            <div class="day-header">
+                <h4 class="m-0"><i class="fa-regular fa-calendar-days me-2"></i>Day 2：6/20 (六) 燕三條工藝與彌彥文化巡禮</h4>
+                <span class="badge bg-light text-dark">燕三條・彌彥</span>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">08:33</span>
+                        <span class="category-badge cat-transport">交通</span>
+                    </div>
+                    <span class="cost-info"><i class="fa-solid fa-yen-sign"></i> 1,690</span>
+                </div>
+                <h5 class="mb-1">新潟站 → 燕三條站</h5>
+                <p class="text-muted mb-0">搭乘 上越新幹線 (車程約 12 分鐘)</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">09:00</span>
+                        <span class="category-badge cat-experience">體驗</span>
+                    </div>
+                    <span class="cost-info">體驗費 + 計程車約 ¥1,000</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=燕市産業史料館" target="_blank" class="map-link">燕市產業史料館 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">手作鈦杯體驗</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">11:00</span>
+                        <span class="category-badge cat-shopping">購物 / 美食</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=燕三条地場産業振興センター" target="_blank" class="map-link">燕三條地場產業振興中心 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-2">逛頂級廚刀餐具</p>
+                <hr class="my-2">
+                <h6 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=杭州飯店+新潟" target="_blank" class="map-link">杭州飯店 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h6>
+                <p class="text-muted mb-0">午餐：燕三條背脂拉麵</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">13:15</span>
+                        <span class="category-badge cat-spot">景點</span>
+                    </div>
+                    <span class="cost-info">JR 車資</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=彌彥神社" target="_blank" class="map-link">彌彥神社 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">搭乘 JR 彌彥線至彌彥站，步行 15 分鐘。最強能量景點</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">15:00</span>
+                        <span class="category-badge cat-experience">體驗</span>
+                    </div>
+                    <span class="cost-info">纜車來回票</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=彌彥山纜車" target="_blank" class="map-link">彌彥山纜車 (視時間) <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">搭纜車登頂遠眺越後平原與日本海風景</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">16:45</span>
+                        <span class="category-badge cat-transport">交通</span>
+                    </div>
+                    <span class="cost-info">JR 車資</span>
+                </div>
+                <h5 class="mb-1">彌彥站 → 新潟站</h5>
+                <p class="text-muted mb-0">搭乘 JR 彌彥線 (吉田站轉乘) 返回市區</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">19:30</span>
+                        <span class="category-badge cat-food">美食</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=美酒佳肴+よんよん" target="_blank" class="map-link">美酒佳肴 よんよん <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">宵夜推薦：現烤赤鯥、當季海鮮、新潟地酒</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">20:30</span>
+                        <span class="category-badge cat-hotel">住宿</span>
+                    </div>
+                </div>
+                <h5 class="mb-1">Hotel Global View Niigata</h5>
+                <p class="text-muted mb-0">回飯店休息、洗澡</p>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div id="day3">
+            <div class="day-header">
+                <h4 class="m-0"><i class="fa-regular fa-calendar-days me-2"></i>Day 3：6/21 (日) 酒造巡禮、萬代海鮮與日落夜景</h4>
+                <span class="badge bg-light text-dark">市區美食與夜景</span>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">10:10</span>
+                        <span class="category-badge cat-food">美食 / 體驗</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=今代司酒造" target="_blank" class="map-link">今代司酒造(株) <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">參觀純米大吟釀酒造</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">12:00</span>
+                        <span class="category-badge cat-food">美食</span>
+                    </div>
+                    <span class="cost-info">壽司餐費</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=萬代島鮮魚市場+Pia+Bandai" target="_blank" class="map-link">萬代島鮮魚市場 (Pia Bandai) <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <ul class="text-muted mb-0 ps-3">
+                    <li>抵達先衝【迴轉壽司 佐渡弁慶】抽號碼牌</li>
+                    <li>路邊烤海鮮：干貝、喉黑魚、牡蠣</li>
+                    <li>BAROQUE by SUZUKI COFFEE 享用咖啡</li>
+                </ul>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">17:30</span>
+                        <span class="category-badge cat-spot">景點</span>
+                    </div>
+                    <span class="cost-info">免費入場</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=Befcoばかうけ展望室" target="_blank" class="map-link">萬代島 Befco ばかうけ展望室 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">登頂 31 樓。17:30~19:30 完美捕捉夕陽轉夜景</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">20:00</span>
+                        <span class="category-badge cat-food">美食</span>
+                    </div>
+                    <span class="cost-info">壽司餐費</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=壽司+川柳" target="_blank" class="map-link">壽司 川柳 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">晚餐：點新潟限定「極み」特上握壽司套餐 (三大美食最終章)</p>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div id="day4">
+            <div class="day-header">
+                <h4 class="m-0"><i class="fa-regular fa-calendar-days me-2"></i>Day 4：6/22 (一) 神社參訪、購物與滿載而歸</h4>
+                <span class="badge bg-light text-dark">新潟 → 桃園</span>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">09:30</span>
+                        <span class="category-badge cat-spot">景點</span>
+                    </div>
+                    <span class="cost-info">巴士單程約 ¥210 (S20 鳥屋野線)</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=白山神社+新潟" target="_blank" class="map-link">白山神社 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">搭乘市區巴士至「白山公園前」。參拜新潟總鎮守</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">10:30</span>
+                        <span class="category-badge cat-shopping">購物</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=萬代商圈" target="_blank" class="map-link">萬代商圈 / 古町老街 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">BEAMS、Uniqlo、LoveLa、伊勢丹，或古町昭和老街巡禮</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">11:30</span>
+                        <span class="category-badge cat-experience">體驗</span>
+                    </div>
+                    <span class="cost-info"><i class="fa-solid fa-yen-sign"></i> 500</span>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=ぽんしゅ館+新潟站" target="_blank" class="map-link">ぽんしゅ館 (Ponshukan) <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">體驗 500 日圓清酒投幣機 (清酒博物館)</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">12:30</span>
+                        <span class="category-badge cat-food">美食</span>
+                    </div>
+                </div>
+                <h5 class="mb-1"><a href="https://www.google.com/maps/search/?api=1&query=吟釀味噌らーめん+まごころ亭+本店" target="_blank" class="map-link">吟釀味噌らーめん まごころ亭 本店 <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></h5>
+                <p class="text-muted mb-0">午餐：特製味噌拉麵</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">15:00</span>
+                        <span class="category-badge cat-transport">交通</span>
+                    </div>
+                </div>
+                <h5 class="mb-1">飯店 → 新潟站南口</h5>
+                <p class="text-muted mb-0">飯店提取行李，前往機場巴士站</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">16:00</span>
+                        <span class="category-badge cat-transport">交通</span>
+                    </div>
+                    <span class="cost-info">巴士車資</span>
+                </div>
+                <h5 class="mb-1">JR 新潟站 → 新潟機場</h5>
+                <p class="text-muted mb-0">搭乘機場連接巴士 (16:25 抵達機場)</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">16:30</span>
+                        <span class="category-badge cat-flight">航班</span>
+                    </div>
+                </div>
+                <h5 class="mb-1">新潟機場報到</h5>
+                <p class="text-muted mb-0">辦理登機手續、免稅店最後衝刺</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">18:50</span>
+                        <span class="category-badge cat-flight">航班</span>
+                    </div>
+                </div>
+                <h5 class="mb-1">新潟機場 (KIJ) 出發</h5>
+                <p class="text-muted mb-0">IT229 虎航返回桃園</p>
+            </div>
+
+            <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span class="time-badge me-2">21:25</span>
+                        <span class="category-badge cat-flight">抵達</span>
+                    </div>
+                </div>
+                <h5 class="mb-1">桃園國際機場 (TPE) 抵達</h5>
+                <p class="text-muted mb-0">第一航廈・平安返台</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center text-muted py-4 mt-5 fs-7 border-top">
+        <p class="mb-0">Niigata Travel Itinerary &copy; 2026 | Powered by GitHub Pages</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
